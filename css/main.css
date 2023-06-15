@@ -1,0 +1,58 @@
+.service-icon {
+  flex: none !important;
+  height: 58px !important;
+  width: 64px !important;
+  margin: auto;
+}
+
+.max-witdth-400{
+  max-width: 400px;
+}
+
+.team-img {
+  margin: auto;
+}
+
+.contact-button {
+  margin: auto;
+}
+
+h1, uk-h1, h2, uk-h2 {
+  font-family: 'Bodoni Moda', serif !important;
+}
+
+.uk-button-primary {
+  background-color: #746AC3 !important;
+}
+
+.about-title {
+  letter-spacing: 1px !important;
+}
+
+.text-purple {
+  color: #746AC3 !important;
+}
+
+.text-cyan {
+  color: #B9E2D8 !important;
+}
+
+.text-yellow {
+  color: #A79437 !important;
+}
+
+.text-pink {
+  color: #F2AEBB !important;
+}
+
+.text-black {
+  color: #1D1D1B !important;
+}
+
+a {
+  color: #746AC3 !important;
+}
+
+.bg-purple {
+  background-color: #746AC3 !important;
+}

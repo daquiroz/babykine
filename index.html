@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Baby Kine</title>
+
+  <!-- UIkit css -->
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- UIkit JS -->
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="uk-navbar-container uk-navbar-transparent">
+    <div class="uk-container">
+      <div uk-navbar>
+        <div class="uk-navbar-left uk-margin-small-bottom uk-margin-small-top">
+          <img src="img/logo-baby-kine.png" class="logo">
+          <!-- <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">Logo</a> -->
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Inicio</a></li>
+            <li class=""><a href="#services" uk-scroll>Servicios</a></li>
+            <li class=""><a href="#about" uk-scroll>About</a></li>
+            <li class=""><a href="#team" uk-scroll>Equipo</a></li>
+            <li class=""><a href="#location" uk-scroll>Ubicación</a></li>
+            <li class=""><a href="#contact" uk-scroll>Contáctanos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="uk-background-cover uk-panel uk-flex uk-flex-left uk-flex-middle uk-light" style="background-image: url(img/home-baby-kine.png);" uk-height-viewport>
+    <!-- <div class="uk-margin-xlarge-left">
+      <h1 class="uk-h1">BABYKINE</h2>
+      <p class="uk-h4 max-witdth-400">
+        Centro de Rehabilitación Neuroinfantil y Estimulación Temprana formado por un equipo de profesionales de calidad.
+      </p>
+      <button class="uk-button uk-button-primary uk-width-1-2 uk-margin-small-bottom">Contáctanos</button>
+    </div> -->
+  </div>
+
+  <div id="about" class="uk-background-cover uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/background-baby-kine-2.svg);" uk-height-viewport="offset-bottom: 20">
+    <div class="uk-margin-xlarge uk-text-center">
+      <h1 class="uk-h1 about-title">
+        <span class="text-black">B</span>
+        <span class="text-black">A</span>
+        <span class="text-black">B</span>
+        <span class="text-black">Y</span>
+        <span class="text-purple">K</span>
+        <span class="text-cyan">I</span>
+        <span class="text-yellow">N</span>
+        <span class="text-pink">E</span>
+      </h2>
+      <p class="uk-h4 max-witdth-400">
+        Centro de Rehabilitación Neuroinfantil y Estimulación Temprana.
+        <br>
+        Formado por un equipo de profesionales de calidad, que buscan conseguir mediante el juego y el trabajo junto a la
+        familia, el correcto desarrollo psicomotor, social, cognitivo y del lenguaje, fomentando la independencia desde la
+        primera infancia.
+      </p>
+      <button class="uk-button uk-button-primary uk-width-1-2 uk-margin-small-bottom">Contáctanos</button>
+    </div>
+  </div>
+
+  <div id="services" class="uk-section uk-flex uk-flex-center uk-flex-middle" uk-height-viewport="offset-bottom: 20">
+    <div class="uk-container uk-text-center">
+      <div class="uk-margin-large-bottom">
+        <h2 class="uk-h2 uk-margin-small-bottom">Servicios</h2>
+      </div>
+
+      <div class="uk-child-width-1-3@m" uk-grid>
+        <div>
+          <img src="img/rehabilitacion.png" class="service-icon">
+          <h4 class="uk-margin-small-top uk-margin-small-bottom">Rehabilitación neurológica</h4>
+          <a href="#modal-rehabilitacion" uk-toggle>Ver más</a>
+          <div id="modal-rehabilitacion" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <div class="uk-text-center">
+                <h2 class="uk-modal-title">Rehabilitación neurológica</h2>
+                <img src="img/rehabilitacion.png" class="service-icon">
+              </div>
+              <p>
+                Está dirigida a bebés prematuros y recién nacidos que presentan riesgos o problemas de desarrollo neurológico y
+                los
+                niños con daño cerebral (adquirido o congénito) o trastornos neurológicos de cualquier tipo que puedan afectar a
+                su
+                capacidad funcional. Su objetivo fundamental es minimizar, restituir, y/o compensar las alteraciones funcionales
+                asociadas a la lesión que se ha producido en el sistema nervioso central del niño.
+              </p>
+              <p>
+                Se basa en el concepto de neuroplasticidad, es decir, la capacidad del SNC para adaptarse y compensar lesiones,
+                alteraciones estructurales o fisiológicas, minimizando sus efectos. Además, esta habilidad del cerebro para
+                reorganizar
+                su funcionalidad es especialmente importante durante la primera infancia. Lo que hace el cerebro es buscar vías
+                alternativas para activar nuevamente las funciones que se han perdido.
+              </p>
+              <p>
+                Está indicada en todos los niños con afectación del desarrollo motor, independientemente de cuál sea la causa:
+                retraso
+                psicomotor, parálisis cerebral, enfermedades congénitas, parto prematuro, sufrimiento fetal, etc. Se debe
+                considerar
+                iniciar el proceso lo antes posible.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="img/estimulacion.png" class="service-icon">
+          <h4 class="uk-margin-small-top uk-margin-small-bottom">Estimulación temprana</h4>
+          <a href="#modal-estimulacion-temprana" uk-toggle>Ver más</a>
+          <div id="modal-estimulacion-temprana" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <div class="uk-text-center">
+                <h2 class="uk-modal-title">Estimulación temprana</h2>
+                <img src="img/estimulacion.png" class="service-icon">
+              </div>
+              <p>
+                La estimulación temprana es un conjunto de actividades y técnicas dirigidas a niños de 0-6 años, aplicado más
+                concretamente durante los primeros 3 años, pues fisiológicamente la estimulación se basa en la plasticidad cerebral cuyo
+                mayor beneficio se observa en los 36 primeros meses de vida.
+              </p>
+              <p>
+                Busca estimular al niño de manera oportuna, con el objetivo de entregarle variadas experiencias, permitiéndoles formar
+                la base para la adquisición de futuros aprendizajes. A través del juego aprenden y comienzan a desenvolverse en su
+                entorno, favoreciendo el desarrollo psicomotor, social, cognitivo, de lenguaje y comunicación.
+              </p>
+              <p>
+                Para llevar a cabo una correcta estimulación temprana se recomienda utilizar metodologías lúdicas, adaptarlas sesiones a
+                cada niño según sus intereses y ritmos, encontrarse en un ambiente y contexto adecuado, utilizar materiales comunes,
+                situaciones naturales, cotidianas y permitirles al niño descubrir y explorar nuevos aprendizajes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="img/kine.png" class="service-icon">
+          <h4 class="uk-margin-small-top uk-margin-small-bottom">Kinesioterapia Respiratoria</h4>
+          <a href="#modal-rehabilitacion" uk-toggle>Ver más</a>
+          <div id="modal-rehabilitacion" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <div class="uk-text-center">
+                <h2 class="uk-modal-title">Kinesioterapia Respiratoria</h2>
+                <img src="img/kine.png" class="service-icon">
+              </div>
+              <p>
+                El kinesiólogo respiratorio tiene un rol muy importante, ya que es el encargado de mantener en óptimas condiciones la
+                función del sistema respiratorio. Durante el curso de un cuadro patológico es el encargado de facilitar una mejor
+                ventilación y favorecer la limpieza de la vía aérea. Tiene una función crucial en la educación hacia los familiares y/o
+                tutores de niños o personas dependientes para hacer prevención de enfermedades y manejo oportuno para evitar
+                complicaciones y posteriores hospitalizaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="uk-section uk-section-muted uk-flex uk-flex-center uk-flex-middle"
+    uk-height-viewport="offset-bottom: 20">
+    <div class="uk-container uk-text-center">
+      <div class="uk-margin-large-bottom">
+        <h2 class="uk-h2 uk-margin-small-bottom">Terapias</h2>
+      </div>
+
+      <div class="uk-child-width-1-3@m" uk-grid>
+        <!-- <div>
+          <img src="img/rehabilitacion.png" class="service-icon">
+          <h4 class="uk-margin-small-top uk-margin-small-bottom">Rehabilitación neurológica</h4>
+        </div>
+        <div>
+          <img src="img/estimulacion.png" class="service-icon">
+          <h4 class="uk-margin-small-top uk-margin-small-bottom">Estimulación temprana</h4>
+        </div>
+        <div>
+          <img src="img/kine.png" class="service-icon">
+          <h4 class="uk-margin-small-top uk-margin-small-bottom">Kinesioterapia Respiratoria</h4>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <div id="team" class="uk-section">
+    <div class="uk-container uk-text-center">
+      <div class="uk-margin-large-bottom">
+        <h2 class="uk-h2 uk-margin-remove-bottom">Equipo</h2>
+      </div>
+
+      <div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid>
+
+        <div>
+          <img src="img/team/klga_solsire_vargas.jpg" class="team-img">
+          <h5 class="uk-margin-small-top uk-margin-small-bottom">Solsiré Vargas Henríquez</h5>
+          <!-- <p class="uk-text-small uk-margin-remove-top">descripción.</p> -->
+          <a href="#modal-solsire" uk-toggle>Conoceme</a>
+          <div id="modal-solsire" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Solsiré Vargas Henríquez</h2>
+              <ul>
+                <li>Kinesiologa </li>
+                <li>Terapeuta Bobath (EBTA)</li>
+                <li>Instructora de Estimulación Temprana</li>
+                <li>Dip. Desarrollo Psico-sensoriomotor del Recién nacido Prematuro</li>
+                <li>Kinesióloga con 7 años de experiencia en Chile y España, en trastornos del neurodesarrollo y prematuros.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/team/solange_guerra.jpg" class="team-img">
+          <h5 class="uk-margin-small-top uk-margin-small-bottom">Solange Guerra Muñoz</h5>
+          <!-- <p class="uk-text-small uk-margin-remove-top">descripción.</p> -->
+          <a href="#modal-solange-guerra" uk-toggle>Conoceme</a>
+          <div id="modal-solange-guerra" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Solange Guerra Muñoz</h2>
+              <ul>
+                <li>Curso: Administración SPM-2 y Perfil Sensorial 2:
+                Medida de Procesamiento sensorial 2 y Perfil Sensorial 2 de Winnie Dunn – PROAC. </li>
+                <li>Seminario: Identificación de Espectro Autista en Población Adulta - Academia Digital de Psicología y Aprendizaje (ADIPA).</li>
+                <li>Curso: Fundamentos clínicos desde Integración Sensorial – Intersensory Chile.</li>
+                <li>Curso: Razonamiento desde observaciones clínicas en Integración Sensorial – Intersensory Chile.</li>
+                <li>Curso: Intervención terapéutica basada en modelo de Integración Sensorial – Intersensory Chile.</li>
+                <li>Curso: Reanimación cardiopulmonar. Unidad gestión de capacitación SSMSO.</li>
+                <li>En curso: Espectro autista en el preescolar. AMAsperger.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/team/constanza_valenzuela.jpg" class="team-img">
+          <h5 class="uk-margin-small-top uk-margin-small-bottom">Constanza Valenzuela Mercado</h5>
+          <!-- <p class="uk-text-small uk-margin-remove-top">descripción.</p> -->
+          <a href="#modal-constanza-valenzuela" uk-toggle>Conoceme</a>
+          <div id="modal-constanza-valenzuela" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Constanza Valenzuela Mercado</h2>
+              <ul>
+                <li> Capacitación TEACCH - Respuesta educativa CEA</li>
+                <li> Manejo en Deglución pediátrica</li>
+                <li> Formación Talktools - Terapia de alimentación con enfoque sensoriomotor</li>
+                <li> Enfoque Get Permission - Utilización de herramientas de manera responsiva en terapia de alimentación pediátrica</li>
+                <li> Seminario internacional- abordaje fonoaudiológico en motricidad orofacial</li>
+                <li> Formación de Guía de yoga infantil integrak</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/team/allison_santander.jpg" class="team-img">
+          <h5 class="uk-margin-small-top uk-margin-small-bottom">Allison Santander</h5>
+          <!-- <p class="uk-text-small uk-margin-remove-top">descripción.</p> -->
+          <a href="#modal-allison-santander" uk-toggle>Conoceme</a>
+          <div id="modal-allison-santander" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Allison Santander</h2>
+              <ul>
+                <li> Diagnóstico Diferencial Infantil en Trastorno del Neurodesarrollo</li>
+                <li> Diplomado en Convivencia Escolar</li>
+                <li> Aproximaciones Clínica al Abuso Sexual de la Infancia y la Adolescencia</li>
+                <li> Técnicas de Psicoterapia Breve para el Trastorno de Pánico</li>
+                <li> Introducción a la clínica Psicoanalítica con niñosCertificación WISC-V</li>
+                <li> Abuso Sexual en Adolescentes: Maniobras Terapeúticas Autolesiones en Adolescentes</li>
+                <li> Depresión y su Abordaje Bajo el Modelo Psicodinámico</li>
+                <li> Introducción a la Clínica en intervención precoz</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/team/allison_santander.jpg" class="team-img">
+          <h5 class="uk-margin-small-top uk-margin-small-bottom">Constanza Salas Zuñiga</h5>
+          <!-- <p class="uk-text-small uk-margin-remove-top">descripción.</p> -->
+          <a href="#modal-constanza-zuniga" uk-toggle>Conoceme</a>
+          <div id="modal-constanza-zuniga" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Constanza Salas Zuñiga</h2>
+              <ul>
+                <li> Reanimación cardiopulmonar (RCP) y uso de DEA 21 horas, OCEUP capacitaciones, 2020.</li>
+                <li> Infecciones Respiratorias Agudas (IRA) 120 horas, OTECE EDUCANOVA, 2021.</li>
+                <li> Enfermedades Respiratorias del Adulto (ERA) 120 horas, OTEC EDUCANOVA, 2021.</li>
+                <li> Curso Ventilación Mecánica 80 horas, OTEC EDUCANOVA, 2021.</li>
+                <li> Kinesióloga con gran experiencia en el área respiratoria.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/team/isi_torreblanca.jpg" class="team-img">
+          <h5 class="uk-margin-small-top uk-margin-small-bottom">Isidora De la Lastra Torreblanca</h5>
+          <!-- <p class="uk-text-small uk-margin-remove-top">descripción.</p> -->
+          <a href="#modal-isidora-de-la-lastra" uk-toggle>Conoceme</a>
+          <div id="modal-isidora-de-la-lastra" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Isidora De la Lastra Torreblanca</h2>
+              <ul>
+                <li>Certificada en Baby Sings.</li>
+                <li>Formada en Juego como Herramienta Terapéutica.</li>
+                <li>Formada en Seguimiento del recién nacido de alto riesgo.</li>
+                <li>Certificada en Modelo de intervención de Atención Temprana y Neurodesarrollo.</li>
+                <li>Certificada en Test de Aprendizaje y Desarrollo Infantil (TADI).</li>
+                <li>Formada en Selectividad alimentaria.</li>
+                <li>Aplicación de Pautas SPM y SP2.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/team/andrea_soto.jpg" class="team-img">
+          <h5 class="uk-margin-small-top uk-margin-small-bottom">Andrea Soto Castillo</h5>
+          <!-- <p class="uk-text-small uk-margin-remove-top">descripción.</p> -->
+          <a href="#modal-andrea-soto" uk-toggle>Conoceme</a>
+          <div id="modal-andrea-soto" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Andrea Soto Castillo</h2>
+              <ul>
+                <li>Curso motricidad. Herramientas, tips y ejercicios terapéuticos.</li>
+                <li>Diplomado "Abordaje integral en trastornos de la deglución. A lo largo del ciclo vital".</li>
+                <li>Curso evaluación e intervención del rechazo alimentario.</li>
+                <li>Seminario "Neurodesarrollo y estimulación temprana en la neurociencia" Estimulación Kimun.</li>
+                <li>Taller trastorno del espectro autista (TEA).</li>
+                <li>Taller "Actividades para el abordaje fonoaudiológico en el SD. de Down"</li>
+                <li>Curso, "Deglución en motricidad orofacial", Unidad de motricidad orofacial del Departamento de Fonoaudiología Universidad de Chile.</li>
+                <li>Curso basico de lengua de señas e introducción a lectura labiofacial".</li>
+                <li>Jornada de usuarios con TEA (Trastorno del espectro autista) "Diagnóstico fonoaudiológico del niño pre-verbal"</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    </div>
+  </div>
+
+  <div id="gallery" class="uk-section uk-section-muted">
+    <div class="uk-container uk-text-center uk-margin-large-top uk-margin-large-bottom">
+      <div class="uk-margin-large-bottom">
+        <h2 class="uk-h2 uk-margin-small-bottom">Nuestro día a día</h2>
+        <!-- <p class="uk-h5 uk-margin-remove-top uk-margin-xlarge-right uk-margin-xlarge-left">
+          Cada uno de nuestros servicios incluye, de forma gratuita, un especialista que trabajará en conjunto contigo y nuestros abogados.
+        </p> -->
+      </div>
+
+      <div class="uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid="masonry: true">
+        <div>
+          <img src="img/gallery/gallery1.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery2.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery3.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery4.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery5.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery6.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery7.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery8.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery9.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery13.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery11.jpg" class="team-img">
+        </div>
+        <div>
+          <img src="img/gallery/gallery12.jpg" class="team-img">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="location" class="uk-section">
+    <div class="uk-container uk-text-center uk-margin-large-top uk-margin-large-bottom">
+      <h2 class="uk-h2">Ubicación</h2>
+      <div>
+        <p class="uk-h5">
+          Calle Kepler 9, Anzures, Miguel Hidalgo, 11590 Ciudad de México, CDMX
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.596190172673!2d-99.18155672354298!3d19.42984584076646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff52a0fd7e01%3A0x7296238116d74fcd!2sCalle%20Kepler%209%2C%20Anzures%2C%20Miguel%20Hidalgo%2C%2011590%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1686838529142!5m2!1ses!2smx"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer" class="uk-section bg-purple">
+    <div class="uk-text-center">
+      <a href="https://www.instagram.com/babykine.cl/" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+      <a href="https://www.facebook.com/babykine.cl" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+      <a href="https://www.tiktok.com/@babykine.cl" class="uk-icon-button" uk-icon="tiktok"></a>
+    </div>
+  </div>
+</html>
